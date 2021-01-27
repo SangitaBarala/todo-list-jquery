@@ -1,0 +1,150 @@
+*
+{
+	padding:0px;
+	margin:0px;
+	box-sizing:border-box;	
+}
+body
+{
+	display:flex; 
+	align-items:center;
+	justify-content:center;
+	height:100vh;
+	/* background:linear-gradient(to bottom left, #cc33ff 0%, #ff99cc 100%); */
+	background-image:url(bodyimg2.png);   
+}
+/* .leftpic */
+/* { */
+/* /* height:752px;  */ */
+/* width:100%; */
+/* height:100vh; */
+/* } */
+.title 
+{
+	background-color:yellow;
+	height:100px;
+}
+.container
+{
+	background-color:#66ffff;
+	height:100vh;
+}
+.todo-container
+{
+	/* width:70%; */
+	margin-left:10px;
+	margin-right:10px;
+	background-color:black;
+	border-radius:10px;
+	padding:40px;
+	margin:40px;
+	align-items:center;
+	/* justify-content:center; */
+}
+.input
+{
+	display:flex;
+	justify-content:space-between;
+	margin-bottom:30px;
+	align-items:center;	
+}
+.input .form-control
+{
+	height:50px;
+	padding:0px 20px;
+	width:95%;
+	border-radius:5px;
+	font-size:15px;
+	background:transparent;
+	 border:1px solid green; 
+	color:yellow;
+	background-color:#8cff66;
+	/* box-shadow:-6px -6px 10px rgb(255 255 255 0.03), */
+				/* 6px 6px 10px rgb(10 8 10 0.8), */
+				/* -6px -6px 10px rgb(255 255 255 0.05), */
+				/* 6px 6px 10px rgb(10 8 10 0.8), */
+}
+.input .form-control:focus
+{
+	outline:none;
+}
+.add .material-icons
+{
+	height:50px;
+	width:50px;
+	background:yellow;
+	color:#161117;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	border-radius:50%;
+	margin-left:15px;
+	font-size:30px;
+	cursor:pointer;
+	
+}
+.todo-list li
+{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	color:black;
+	/* background:; */
+	border-radius:5px;
+	padding:15px;
+	overflow:hidden;
+	margin-top:15px;
+	background:#c266ff;
+	/* border:1px solid green; */
+}
+.left-cont input
+{
+	display:none;
+	cursor:pointer;
+}
+.left-cont label
+{
+	cursor:pointer;
+	position:relative;
+}
+.left-cont label:before
+{
+	content:'';
+	padding:10px;
+	position:relative;
+	display:inline-block;
+	vertical-align:middle;
+	margin-right:9px;
+	background:yellow;
+	border-radius:3px;
+}
+.left-cont input:checked + label:before
+{
+	background:#8cff66;
+}
+.left-cont input:checked + label:after
+{
+	content:'';
+	position:absolute;
+	display:inline-block;
+	top:4px;
+	left:8px;
+	width:5px;
+	height:12px;
+	border:solid #221525;
+	border-width:0px 2px 2px 0px;
+	transform:rotate(45deg);
+}
+.remove
+{
+	color:red;
+	cursor:pointer;
+	line-height:1;
+	transition:.5s;
+	transform:translateX(48px);
+}
+.remove.active
+{
+	transition:.5s;
+	transform:translateX(0px);
+}
